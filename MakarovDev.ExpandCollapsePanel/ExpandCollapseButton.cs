@@ -33,6 +33,7 @@ namespace MakarovDev.ExpandCollapsePanel
         [Browsable(true)]
         [Category("ExpandCollapseButton")]
         [Description("Expand or collapse button.")]
+        [DefaultValue(true)]
         public bool IsExpanded
         {
             get { return _isExpanded; }
@@ -106,11 +107,11 @@ namespace MakarovDev.ExpandCollapsePanel
 
             #region initialize expanded/collapsed state bitmaps:
             InitButtonStyle(ExpandButtonStyle.Circle);
-            InitButtonSize(ExpandButtonSize.Normal);
+            InitButtonSize(ExpandButtonSize.Small);
             #endregion
 
             // initial state of panel - collapsed
-            _isExpanded = false;
+            _isExpanded = true;
         }
 
         #region ExpandButtonStyles
@@ -125,6 +126,7 @@ namespace MakarovDev.ExpandCollapsePanel
             Triangle,
             FatArrow
         }
+
         private ExpandButtonStyle _expandButtonStyle = ExpandButtonStyle.Circle;
 
         /// <summary>
@@ -200,7 +202,7 @@ namespace MakarovDev.ExpandCollapsePanel
             Normal,
             Large
         }
-        private ExpandButtonSize _expandButtonSize = ExpandButtonSize.Normal;
+        private ExpandButtonSize _expandButtonSize = ExpandButtonSize.Small;
 
         /// <summary>
         /// Size preset of the expand-collapse button.
@@ -208,6 +210,7 @@ namespace MakarovDev.ExpandCollapsePanel
         [Category("ExpandCollapseButton")]
         [Description("Size preset of the expand-collapse button.")]
         [Browsable(true)]
+        [DefaultValue(ExpandButtonSize.Small)]
         public ExpandButtonSize ButtonSize
         {
             get { return _expandButtonSize; }

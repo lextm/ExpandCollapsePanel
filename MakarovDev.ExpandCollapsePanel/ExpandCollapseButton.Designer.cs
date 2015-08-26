@@ -45,7 +45,7 @@ namespace MakarovDev.ExpandCollapsePanel
             this.lblLine.Size = new System.Drawing.Size(382, 1);
             this.lblLine.TabIndex = 0;
             this.lblLine.Text = "label1";
-            this.lblLine.MouseDown += new MouseEventHandler(this.OnMouseDown);
+            this.lblLine.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
             // 
             // lblHeader
             // 
@@ -54,13 +54,13 @@ namespace MakarovDev.ExpandCollapsePanel
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHeader.AutoSize = true;
             this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblHeader.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblHeader.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblHeader.Location = new System.Drawing.Point(41, 3);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(68, 15);
             this.lblHeader.TabIndex = 2;
             this.lblHeader.Text = "Заголовок";
-            this.lblHeader.MouseDown += new MouseEventHandler(this.OnMouseDown);
+            this.lblHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
             // 
             // pictureBox1
             // 
@@ -71,7 +71,7 @@ namespace MakarovDev.ExpandCollapsePanel
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseDown += new MouseEventHandler(this.OnMouseDown);
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
             // 
             // ExpandCollapseButton
             // 
@@ -82,7 +82,7 @@ namespace MakarovDev.ExpandCollapsePanel
             this.Controls.Add(this.lblLine);
             this.MaximumSize = new System.Drawing.Size(0, 40);
             this.Name = "ExpandCollapseButton";
-            this.Size = new System.Drawing.Size(150, 40);
+            this.Size = new System.Drawing.Size(0, 40);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

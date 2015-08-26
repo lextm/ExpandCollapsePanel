@@ -22,7 +22,7 @@ namespace MakarovDev.ExpandCollapsePanel
         /// <summary>
         /// Enable pretty simple animation of panel on expanding or collapsing
         /// </summary>
-        private bool _useAnimation = true;
+        private bool _useAnimation = false;
 
         /// <summary>
         /// Height of panel in expanded state
@@ -61,6 +61,7 @@ namespace MakarovDev.ExpandCollapsePanel
         [Description("Expand or collapse panel content. " +
                      "\r\nAttention, for correct work with resizing child controls," +
                      " please set IsExpanded to \"false\" in code (for example in your Form class constructor after InitializeComponent method) and not in Forms Designer!")]
+        [DefaultValue(true)]
         [Browsable(true)]
         public bool IsExpanded
         {
@@ -89,6 +90,7 @@ namespace MakarovDev.ExpandCollapsePanel
         /// </summary>
         [Category("ExpandCollapsePanel")]
         [Description("Enable pretty simple animation of panel on expanding or collapsing.")]
+        [DefaultValue(false)]
         [Browsable(true)]
         public bool UseAnimation
         {
@@ -113,6 +115,7 @@ namespace MakarovDev.ExpandCollapsePanel
         /// </summary>
         [Category("ExpandCollapsePanel")]
         [Description("Size preset of the expand-collapse button.")]
+        [DefaultValue(ExpandCollapseButton.ExpandButtonSize.Small)]
         [Browsable(true)]
         public ExpandCollapseButton.ExpandButtonSize ButtonSize
         {
@@ -140,6 +143,7 @@ namespace MakarovDev.ExpandCollapsePanel
         /// <summary>
         /// Font used for displays header text
         /// </summary>
+        [Browsable(true)]
         public override Font Font
         {
             get
@@ -155,6 +159,7 @@ namespace MakarovDev.ExpandCollapsePanel
         /// <summary>
         /// Foreground color used for displays header text
         /// </summary>
+        [Browsable(true)]
         public override Color ForeColor
         {
             get
