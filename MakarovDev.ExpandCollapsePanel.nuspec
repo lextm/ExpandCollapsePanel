@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <version>1.0.0</version>
+    <authors>Alexander Makarov</authors>
+    <owners>Alexander Makarov</owners>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>https://github.com/alexander-makarov/ExpandCollapsePanel</projectUrl>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework="" />
+      <frameworkAssembly assemblyName="System" targetFramework="" />
+    </frameworkAssemblies>
+    <id>MakarovDev.ExpandCollapsePanel</id>
+    <title>MakarovDev ExpandCollapsePanel</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ExpandCollapsePanel is WinForms control has similar to WPF Expander control. Control displays a header that has a collapsible window that displays content.</description>
+    <summary>ExpandCollapsePanel is WinForms control has similar to WPF Expander control. Control displays a header that has a collapsible window that displays content.</summary>
+    <releaseNotes>
+    </releaseNotes>
+    <copyright>Copyright (c) 2013 Alexander Makarov</copyright>
+    <language>en-US</language>
+    <tags>windows forms expander panel</tags>
+  </metadata>
+  <files>
+    <file src=".\bin\net40\MakarovDev.ExpandCollapsePanel.dll" target="lib\net40\MakarovDev.ExpandCollapsePanel.dll" />
+  </files>
+</package>
